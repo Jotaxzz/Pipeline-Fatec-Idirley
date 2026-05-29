@@ -1,12 +1,7 @@
-import sqlite3
+def soma(a, b):
+    return a + b
 
 
-def buscar_usuario(nome):
-    conexao = sqlite3.connect("usuarios.db")
-    cursor = conexao.cursor()
+if __name__ == "__main__":
+    print(soma(2, 3))
 
-    query = f"SELECT * FROM usuarios WHERE nome = '{nome}'"
-
-    cursor.execute(query)
-
-    return cursor.fetchall()
