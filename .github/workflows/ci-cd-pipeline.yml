@@ -58,7 +58,7 @@ jobs:
 
       - name: Executar Pytest
         run: |
-          pytest
+          PYTHONPATH=. pytest
 
   deploy-stage:
     name: 🚀 Deploy Stage
